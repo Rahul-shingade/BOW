@@ -58,7 +58,7 @@ for i in range(len(sent)):
    review = review.split()
    # review =[ps.stem(word) for word in review if not word in set(stopwords)]
    review = [wordnet.lemmatize(word) for word in review if not word in set(stopwords.words('english'))]
-   review = ''.join(review)
+   review = ' '.join(review)
    corpus.append(review)
    
 # create the bag of words model 
