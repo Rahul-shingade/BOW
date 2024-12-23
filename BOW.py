@@ -53,7 +53,7 @@ corpus = []
 # create the one empty list bcz after clean the data store in the list
 
 for i in range(len(sent)):
-   review = re.sub('[^a-zA-Z]','',sent[i])
+   review = re.sub('[^a-zA-Z]',' ',sent[i])
    review = review.lower()
    review = review.split()
    # review =[ps.stem(word) for word in review if not word in set(stopwords)]
