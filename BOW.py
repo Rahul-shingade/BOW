@@ -64,6 +64,6 @@ for i in range(len(sent)):
 # create the bag of words model 
 
 # also we called as document amtrix
-from sklearn.feature_extraction.text import TfidfVectorizer
-cv = TfidfVectorizer()
+from sklearn.feature_extraction.text import CountVectorizer
+cv = CountVectorizer()
 out = cv.fit_transform(corpus).toarray()
