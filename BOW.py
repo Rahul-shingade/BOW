@@ -67,3 +67,7 @@ for i in range(len(sent)):
 from sklearn.feature_extraction.text import CountVectorizer
 cv = CountVectorizer()
 out = cv.fit_transform(corpus).toarray()
+
+from sklearn.feature_extraction.text import TfidfVectorizer
+cv = TfidfVectorizer()
+out2 = cv.fit_transform(corpus).toarray()
